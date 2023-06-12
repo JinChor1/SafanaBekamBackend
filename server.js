@@ -14,10 +14,12 @@ const app = express();
 // midleware
 app.use(express.json()); /* pass data to req.body */
 app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+    res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
     console.log(req.path, req.method);
     next();
 });
-
 // routes
 app.use('/api/companyDetails',companyDetailsRoutes);
 app.use('/api/serviceDetails',serviceDetailsRoutes);
