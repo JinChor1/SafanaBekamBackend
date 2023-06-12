@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "malaysia-postcodes": "^1.0.5",
+    "moment": "^2.29.4",
+    "mongoose": "^7.0.3",
+    "mykad": "^1.3.3",
+    "nodemailer": "^6.9.3",
+    "validator": "^13.9.0"
+  }
+}
