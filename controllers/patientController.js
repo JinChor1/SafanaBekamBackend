@@ -88,13 +88,13 @@ const signupPatient = async (req,res) => {
 
         transporter.sendMail(mailOptions, function(err, data) {
             if (err) {
-                res.status(404).json({error: err});
+                return res.status(404).json({error: err});
             }
         });
 
         res.status(200).json({_id: patientRes._id, patientEmail: patientRes.patientEmail});
     } catch (err) {
-        res.status(400).json({error: err.message})
+        return res.status(400).json({error: err.message})
     }
 }
 
