@@ -29,7 +29,7 @@ const getWidgetData = async (companyId) => {
     // upcoming booking widget
     const upcomingBooking = {
         count: upcomingBookingCount,
-        percentage: percentageUpcoming + "%",
+        percentage: percentageUpcoming.toFixed(0) + "%",
         isNegative: percentageUpcoming<0
     }
     // past completed booking 7-14 days
@@ -46,7 +46,7 @@ const getWidgetData = async (companyId) => {
     // completed booking widget
     const completedBooking = {
         count: pastBookingCount,
-        percentage: percentageCompleted + "%",
+        percentage: percentageCompleted.toFixed(0) + "%",
         isNegative: percentageCompleted<0
     }
     // revenue 0-6 days
@@ -106,7 +106,7 @@ const getWidgetData = async (companyId) => {
     // new patient widget
     const newPatient = {
         count: newPatientCount,
-        percentage: percentagePatient + "%",
+        percentage: percentagePatient.toFixed(0) + "%",
         isNegative: percentagePatient<0
     }
 
