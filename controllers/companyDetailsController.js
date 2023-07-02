@@ -1,5 +1,6 @@
 const CompanyDetails = require('../models/companyDetailsModel');
 const mongoose = require('mongoose');
+const fetch = require("node-fetch");
 
 // get all company details
 const getAllCompanyDetails = async (req,res) => {
