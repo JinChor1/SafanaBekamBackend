@@ -6,7 +6,7 @@
 
 <p>
   <a href="">
-    <img src="https://img.shields.io/github/last-commit/JinChor1/SafanaBekamBackend" alt="last update" />
+    <img src="https://img.shields.io/github/last-commit/JinChor1/SafanaBekamBackend" alt="watchers" />
   </a>
   <a href="">
     <img src="https://img.shields.io/github/watchers/JinChor1/SafanaBekamBackend" alt="last update" />
